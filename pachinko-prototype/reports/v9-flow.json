@@ -1,0 +1,205 @@
+{
+  "baseline": "v8",
+  "version": "v9",
+  "conditions": "200 shots per run, 120 seconds firing plus 40 seconds drain. General pocket, stage ON. Seeds 123/456/789.",
+  "runs": [
+    {
+      "power": 0.36,
+      "seed": 123,
+      "before": {
+        "shots": 200,
+        "hits": 29,
+        "stage": 48,
+        "right": 0,
+        "remaining": 0,
+        "maxAge": 28.3,
+        "expired": []
+      },
+      "after": {
+        "shots": 200,
+        "hits": 10,
+        "stage": 17,
+        "right": 0,
+        "remaining": 0,
+        "maxAge": 19.47,
+        "expired": []
+      }
+    },
+    {
+      "power": 0.36,
+      "seed": 456,
+      "before": {
+        "shots": 200,
+        "hits": 20,
+        "stage": 39,
+        "right": 0,
+        "remaining": 0,
+        "maxAge": 20.31,
+        "expired": []
+      },
+      "after": {
+        "shots": 200,
+        "hits": 9,
+        "stage": 16,
+        "right": 0,
+        "remaining": 0,
+        "maxAge": 13.66,
+        "expired": []
+      }
+    },
+    {
+      "power": 0.36,
+      "seed": 789,
+      "before": {
+        "shots": 200,
+        "hits": 23,
+        "stage": 42,
+        "right": 0,
+        "remaining": 0,
+        "maxAge": 19.74,
+        "expired": []
+      },
+      "after": {
+        "shots": 200,
+        "hits": 9,
+        "stage": 16,
+        "right": 0,
+        "remaining": 0,
+        "maxAge": 16.32,
+        "expired": []
+      }
+    },
+    {
+      "power": 0.55,
+      "seed": 123,
+      "before": {
+        "shots": 200,
+        "hits": 35,
+        "stage": 47,
+        "right": 7,
+        "remaining": 0,
+        "maxAge": 23,
+        "expired": []
+      },
+      "after": {
+        "shots": 200,
+        "hits": 5,
+        "stage": 12,
+        "right": 7,
+        "remaining": 0,
+        "maxAge": 14.65,
+        "expired": []
+      }
+    },
+    {
+      "power": 0.55,
+      "seed": 456,
+      "before": {
+        "shots": 200,
+        "hits": 28,
+        "stage": 44,
+        "right": 7,
+        "remaining": 0,
+        "maxAge": 20.7,
+        "expired": []
+      },
+      "after": {
+        "shots": 200,
+        "hits": 8,
+        "stage": 17,
+        "right": 7,
+        "remaining": 0,
+        "maxAge": 16.53,
+        "expired": []
+      }
+    },
+    {
+      "power": 0.55,
+      "seed": 789,
+      "before": {
+        "shots": 200,
+        "hits": 20,
+        "stage": 43,
+        "right": 2,
+        "remaining": 0,
+        "maxAge": 18.95,
+        "expired": []
+      },
+      "after": {
+        "shots": 200,
+        "hits": 5,
+        "stage": 22,
+        "right": 2,
+        "remaining": 0,
+        "maxAge": 22.16,
+        "expired": []
+      }
+    },
+    {
+      "power": 0.9,
+      "seed": 123,
+      "before": {
+        "shots": 200,
+        "hits": 0,
+        "stage": 0,
+        "right": 199,
+        "remaining": 0,
+        "maxAge": 5.2,
+        "expired": []
+      },
+      "after": {
+        "shots": 200,
+        "hits": 0,
+        "stage": 0,
+        "right": 199,
+        "remaining": 0,
+        "maxAge": 5.2,
+        "expired": []
+      }
+    },
+    {
+      "power": 0.9,
+      "seed": 456,
+      "before": {
+        "shots": 200,
+        "hits": 0,
+        "stage": 0,
+        "right": 200,
+        "remaining": 0,
+        "maxAge": 4.95,
+        "expired": []
+      },
+      "after": {
+        "shots": 200,
+        "hits": 0,
+        "stage": 0,
+        "right": 200,
+        "remaining": 0,
+        "maxAge": 4.95,
+        "expired": []
+      }
+    },
+    {
+      "power": 0.9,
+      "seed": 789,
+      "before": {
+        "shots": 200,
+        "hits": 0,
+        "stage": 0,
+        "right": 199,
+        "remaining": 0,
+        "maxAge": 5.2,
+        "expired": []
+      },
+      "after": {
+        "shots": 200,
+        "hits": 0,
+        "stage": 0,
+        "right": 199,
+        "remaining": 0,
+        "maxAge": 5.2,
+        "expired": []
+      }
+    }
+  ]
+}

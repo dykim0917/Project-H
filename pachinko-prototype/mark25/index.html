@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#312824"><title>별빛 회전극장 · MARK 2.5</title><link rel="stylesheet" href="style.css"></head>
+<body><main aria-label="별빛 회전극장 마크2.5">
+<nav aria-label="기계 선택"><a href="../">MK.I</a><a href="../mark2/">MK.II</a><a href="./" aria-current="page">MK.2.5</a><span>별빛 회전극장</span></nav>
+<div class="hud"><div><small>회전</small><strong id="starts">0</strong></div><div><small>대당첨</small><strong id="wins">0</strong></div><div><small>획득 구슬</small><strong id="paid">0</strong></div><div><small>보류</small><strong id="round">—</strong></div></div>
+<div class="cabinet"><canvas id="board" aria-label="작은 숫자창과 기계식 룰렛으로 리치와 당첨을 표현하는 파칭코"></canvas><div class="machine-badge" id="mode" role="status">READY</div></div>
+<div class="controls"><div class="actions"><button id="start" class="primary" aria-pressed="false">발사 시작</button><div class="tools"><button id="sound" aria-label="소리" aria-pressed="true">소리 ON</button><button id="speed" aria-label="전체 속도">×1</button><button id="reset" aria-label="기록 초기화" title="초기화">↺</button></div></div>
+<div class="handle-control" role="group" aria-label="발사 세기"><button class="arrow" id="power-minus" aria-label="발사 세기 줄이기"><svg viewBox="0 0 24 32" aria-hidden="true"><path d="M20 2 3 16l17 14Z"/></svg></button><div id="handle" class="handle" role="slider" tabindex="0" aria-label="발사 세기" aria-valuemin="0" aria-valuemax="100" aria-valuenow="36"><span class="handle-grip"></span><strong id="power-value">36.0%</strong></div><button class="arrow" id="power-plus" aria-label="발사 세기 늘리기"><svg viewBox="0 0 24 32" aria-hidden="true"><path d="m4 2 17 14L4 30Z"/></svg></button></div></div>
+</main><script src="../physics.js"></script><script src="../sound.js"></script><script src="physics.js"></script><script src="game.js"></script><script src="app.js"></script></body></html>
