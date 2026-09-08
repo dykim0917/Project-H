@@ -1,0 +1,21 @@
+# Local reference material and synced ChatGPT sources
+/sources/
+/reference-analysis/
+
+# Generated handoff bundles
+/docs/*.zip
+
+# Dependencies, local settings, credentials, and OS files
+node_modules/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+*.log
+__pycache__/
+*.pyc
+*.pem
+*.key
+*.apk
+*.mp4

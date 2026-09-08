@@ -1,0 +1,113 @@
+{
+  "comparison": [
+    {
+      "seed": 123,
+      "before": {
+        "shots": 200,
+        "stage": 131,
+        "hits": 86,
+        "right": 5,
+        "remaining": 0
+      },
+      "after": {
+        "shots": 200,
+        "stage": 24,
+        "hits": 17,
+        "right": 5,
+        "remaining": 0
+      }
+    },
+    {
+      "seed": 456,
+      "before": {
+        "shots": 200,
+        "stage": 107,
+        "hits": 70,
+        "right": 6,
+        "remaining": 0
+      },
+      "after": {
+        "shots": 200,
+        "stage": 20,
+        "hits": 7,
+        "right": 6,
+        "remaining": 0
+      }
+    },
+    {
+      "seed": 789,
+      "before": {
+        "shots": 200,
+        "stage": 126,
+        "hits": 76,
+        "right": 7,
+        "remaining": 0
+      },
+      "after": {
+        "shots": 200,
+        "stage": 22,
+        "hits": 6,
+        "right": 6,
+        "remaining": 0
+      }
+    }
+  ],
+  "sweep": [
+    {
+      "power": 0.3,
+      "shots": 200,
+      "stage": 17,
+      "hits": 9,
+      "right": 22,
+      "remaining": 0
+    },
+    {
+      "power": 0.36,
+      "shots": 200,
+      "stage": 24,
+      "hits": 17,
+      "right": 5,
+      "remaining": 0
+    },
+    {
+      "power": 0.4,
+      "shots": 200,
+      "stage": 24,
+      "hits": 7,
+      "right": 1,
+      "remaining": 0
+    },
+    {
+      "power": 0.45,
+      "shots": 200,
+      "stage": 21,
+      "hits": 9,
+      "right": 24,
+      "remaining": 0
+    },
+    {
+      "power": 0.5,
+      "shots": 200,
+      "stage": 15,
+      "hits": 4,
+      "right": 68,
+      "remaining": 0
+    },
+    {
+      "power": 0.6,
+      "shots": 200,
+      "stage": 2,
+      "hits": 2,
+      "right": 187,
+      "remaining": 0
+    },
+    {
+      "power": 0.9,
+      "shots": 200,
+      "stage": 0,
+      "hits": 0,
+      "right": 195,
+      "remaining": 0
+    }
+  ]
+}
