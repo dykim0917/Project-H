@@ -69,17 +69,17 @@ function capsulePose(ball,index,time){
  return{x:268+side*(49+index*6)*t,y:376+63*t,stage:u===1?'landed':'sorted',success};
 }
 class World extends Base.World{
- constructor(options={}){super(options);this.game=new Game(options.gameRandom||options.random||Math.random);this.autoAim=options.autoAim??true;this.leftPower=options.power??RULES.leftPower;this.rightPower=RULES.rightPower;this.attackerEntries=0;}
+ constructor(options={}){super(options);this.game=new Game(options.gameRandom||options.random||Math.random);this.autoAim=options.autoAim??true;this.leftPower=options.power??RULES.leftPower;this.rightPower=RULES.rightPower;this.attackerEntries=0;this.intakeFlash=0;}
  updateAim(){if(this.autoAim)this.power=this.game.rightNeeded?this.rightPower:this.leftPower;}
  setManualPower(power){this.autoAim=false;this.power=Math.max(0,Math.min(1,power));}
- advanceMechanism(dt,events){super.advanceMechanism(dt,events);if(this.game.phase==='charge')this.mode='bonus';this.updateAim();}
+ advanceMechanism(dt,events){this.intakeFlash=Math.max(0,this.intakeFlash-dt);super.advanceMechanism(dt,events);if(this.game.phase==='charge')this.mode='bonus';this.updateAim();}
  start(events){if(!this.game.rightNeeded)super.start(events);}
  interceptBall(b,x0,y0,events){
   if(b.route!=='free'||b.done||!this.game.accepting||y0>=ATTACKER.y||b.y<ATTACKER.y||b.vy<=0)return false;
   const x=x0+(b.x-x0)*(ATTACKER.y-y0)/(b.y-y0);
   if(Math.abs(x-ATTACKER.x)>ATTACKER.width/2-Base.RADIUS)return false;
   if(!this.game.admit(events))return false;
-  b.done=true;this.drained++;this.attackerEntries++;events.push({type:'pocket',x});return true;
+  b.done=true;this.drained++;this.attackerEntries++;this.intakeFlash=.22;events.push({type:'pocket',x});return true;
  }
 }
 const api={...Base,Game,World,capsulePose,RULES,ATTACKER};

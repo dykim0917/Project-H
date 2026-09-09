@@ -104,7 +104,10 @@ function draw(){
  const at=P.ATTACKER,open=g.accepting;
  c.fillStyle=open?'#102d35':'#426875';c.fillRect(at.x-at.width/2,at.y,at.width,23);
  path([[at.x-at.width/2,at.y],[at.x-at.width/2,at.y+23],[at.x+at.width/2,at.y+23],[at.x+at.width/2,at.y]],'#f3cc87',2);
- path([[at.x-at.width/2,at.y],[at.x+at.width/2,at.y+(open?21:0)]],open?'#8ff0c1':'#d5ae73',4);
+ path([[at.x-at.width/2,at.y+(open?23:0)],[at.x+at.width/2,at.y+(open?23:0)]],open?'#8ff0c1':'#d5ae73',4);
+ if(open){for(const x of [440,470,500])path([[x-3,at.y-7],[x,at.y-3],[x+3,at.y-7]],'#20785d',2);}
+ if(world.intakeFlash>0){c.save();c.globalAlpha=world.intakeFlash/.22;c.fillStyle='#bcffd3';c.fillRect(at.x-at.width/2+2,at.y+2,at.width-4,18);c.restore();}
+ label(world.intakeFlash>0?'IN!':open?'OPEN':'CLOSED',at.x,at.y+16,9,'#e6f6ee');
  label(open?(g.phase==='charge'?'LOAD '+g.loaded+'/3':g.roundNo+'R '+g.roundCount+'/4'):'ATTACKER',at.x,at.y-9,9,'#224853');
  for(const p of P.starters){c.fillStyle='#69513a';c.fillRect(p.x-p.width/2,p.y,p.width,20);path([[p.x-p.width/2,p.y],[p.x-p.width/2,p.y+20],[p.x+p.width/2,p.y+20],[p.x+p.width/2,p.y]],'#f0d49b',2);label('START',p.x,p.y+34,8);}
  label('OUT',268,626,8,'#89704d');path([[35,631],[501,631]],'#aa8d60',3);

@@ -40,3 +40,13 @@ test('demo starts real automatic firing; manual controls, reset and hidden state
  h.sandbox.document.hidden=true;h.listeners.visibilitychange();const before=h.read('JSON.stringify([world.time,world.paid,world.game.payQueue])');h.advance(5);assert.equal(h.read('JSON.stringify([world.time,world.paid,world.game.payQueue])'),before);
  h.sandbox.document.hidden=false;h.listeners.visibilitychange();h.click('reset');assert.equal(h.read('world.game.payQueue+world.attackerEntries+world.paid'),0);assert.equal(h.read('world.autoAim'),true);
 });
+test('browser script entry points load together and execute physical right-shot payout',()=>{
+ const path=require('node:path'),ctx=vm.createContext({console});
+ const html=fs.readFileSync(require.resolve('./index.html'),'utf8');
+ for(const m of html.matchAll(/<script src="([^"]+)"/g)){
+  const file=m[1].split('?')[0];if(file==='app.js')continue;
+  vm.runInContext(fs.readFileSync(path.resolve(__dirname,file),'utf8'),ctx);
+ }
+ const result=vm.runInContext(`(()=>{let seed=91;const random=()=>((seed=(Math.imul(seed,1664525)+1013904223)>>>0)/4294967296);const P=PachinkoMark4,w=new P.World({random,gameRandom:()=>.9});w.game.startJackpot([]);for(let i=0;i<60/P.STEP;i++)w.step(P.STEP,true);return{paid:w.game.paid,entries:w.attackerEntries};})()`,ctx);
+ assert.equal(result.paid,300);assert.equal(result.entries,23);
+});
