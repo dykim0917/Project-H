@@ -102,6 +102,7 @@ class World{
    if(b.route==='held')continue;
    if(b.route==='shelf'){const slope=shelfSlope(b.x);b.vx+=(740*slope/(1+slope*slope)-1.1*b.vx)*dt;b.x+=b.vx*dt;b.y=shelfY(b.x)-R;continue;}
    const x0=b.x,y0=b.y;b.vy=Math.min(850,b.vy+740*dt);b.x+=b.vx*dt;b.y+=b.vy*dt;
+   if(this.interceptBall?.(b,x0,y0,events))continue;
    if(b.route==='drop'){
     if(crossing(x0,y0,b,chamber.vY,this.vX,chamber.vWidth)){this.takeV(b,events);continue;}
     if(b.y>472){b.done=true;this.drained++;this.missedV++;events.push({type:'miss-v'});}continue;
