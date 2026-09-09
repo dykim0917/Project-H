@@ -1,0 +1,2 @@
+@import url("../mark3/style.css");
+body{background:radial-gradient(ellipse at 50% 20%,#3d6170,#132630 80%)}.cabinet{border-color:#427588;background:#bfd3d4;box-shadow:0 0 0 3px #c9a66f,0 14px 25px #0005}.hud{background:linear-gradient(#355662,#1b3540)}.primary[aria-pressed=true]{background:linear-gradient(#527f87,#2c5360)}nav{flex-wrap:wrap}nav span{color:#c5dce0}.machine-badge{color:#21475a}

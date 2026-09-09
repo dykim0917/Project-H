@@ -2,7 +2,7 @@
 
 자기 공간에서 가상의 파칭코 기계를 관찰하며 수집·꾸미기를 즐기는 모바일 방치형 게임의 기획과 브라우저 시제품입니다.
 
-현재 대표 시제품은 **Mk.III 변형 러쉬**입니다. 방·경제·저장·오프라인 진행·온라인 랭킹은 아직 구현되지 않았습니다.
+현재 시제품은 **Mk.III 변형 러쉬**와 자매 기계 **Mk.IV 황동 구슬공방**입니다. 방·경제·저장·오프라인 진행·온라인 랭킹은 아직 구현되지 않았습니다.
 
 ## 실행
 
@@ -20,7 +20,7 @@ macOS:
 python3 -m http.server 8765 --bind 127.0.0.1 --directory pachinko-prototype
 ```
 
-브라우저에서 [Mk.III](http://127.0.0.1:8765/mark3/)를 엽니다. 이 주소는 각 PC에서 서버를 실행한 뒤 사용합니다. 루트 주소는 이전 판면 실험입니다. Mk.III는 공통 파일과 Mk.2.5 물리에 의존하므로 저장소 전체를 내려받아 주세요.
+브라우저에서 [Mk.IV](http://127.0.0.1:8765/mark4/) 또는 [Mk.III](http://127.0.0.1:8765/mark3/)를 엽니다. 이 주소는 각 PC에서 서버를 실행한 뒤 사용합니다. 루트 주소는 이전 판면 실험입니다. Mk.III는 공통 파일과 Mk.2.5 물리에 의존하므로 저장소 전체를 내려받아 주세요.
 
 ## 기획과 구현 기록
 
@@ -30,6 +30,8 @@ python3 -m http.server 8765 --bind 127.0.0.1 --directory pachinko-prototype
 - [보존된 기준 GDD v0.3](docs/PROJECT-H-GDD-v0.3.md)
 - [플레이 패턴 조사](docs/PLAY-PATTERNS-RESEARCH-v0.1.md)
 - [이전 인계 맥락 — v0.3, 최신 결정은 v0.6 참조](docs/PROJECT-H-HANDOFF-PROMPT-v0.3.md)
+- [Mk.IV 구현 범위](pachinko-prototype/mark4/README.md)
+- [기계 수집·성급 후속 논의](docs/MACHINE-COLLECTION-NOTES-v0.1.md)
 - [Mk.III 구현 범위](pachinko-prototype/mark3/README.md)
 - [시제품 변경 이력](pachinko-prototype/README.md)
 
@@ -55,7 +57,7 @@ git push
 Node.js가 설치된 환경에서 저장소 루트 기준:
 
 ```sh
-node --test pachinko-prototype/tests/machine.test.cjs pachinko-prototype/tests/sound.test.cjs pachinko-prototype/mark2/machine.test.cjs pachinko-prototype/mark25/game.test.cjs pachinko-prototype/mark3/game.test.cjs
+node --test pachinko-prototype/tests/machine.test.cjs pachinko-prototype/tests/sound.test.cjs pachinko-prototype/mark2/machine.test.cjs pachinko-prototype/mark25/game.test.cjs pachinko-prototype/mark3/game.test.cjs pachinko-prototype/mark4/game.test.cjs
 ```
 
 이 검사는 실제 브라우저 화면·휴대폰 음향 체감 검증을 대신하지 않습니다.
