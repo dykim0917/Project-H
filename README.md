@@ -24,12 +24,13 @@ python3 -m http.server 8765 --bind 127.0.0.1 --directory pachinko-prototype
 
 ## 기획과 구현 기록
 
-- [최신 GDD v0.6 초안](docs/PROJECT-H-GDD-v0.6.md)
+- [최신 GDD v0.7 초안](docs/PROJECT-H-GDD-v0.7.md)
+- [이전 GDD v0.6 초안](docs/PROJECT-H-GDD-v0.6.md)
 - [이전 GDD v0.5 초안](docs/PROJECT-H-GDD-v0.5.md)
 - [이전 GDD v0.4 초안](docs/PROJECT-H-GDD-v0.4.md)
 - [보존된 기준 GDD v0.3](docs/PROJECT-H-GDD-v0.3.md)
 - [플레이 패턴 조사](docs/PLAY-PATTERNS-RESEARCH-v0.1.md)
-- [이전 인계 맥락 — v0.3, 최신 결정은 v0.6 참조](docs/PROJECT-H-HANDOFF-PROMPT-v0.3.md)
+- [이전 인계 맥락 — v0.3, 최신 결정은 v0.7 참조](docs/PROJECT-H-HANDOFF-PROMPT-v0.3.md)
 - [Mk.IV 구현 범위](pachinko-prototype/mark4/README.md)
 - [기계 수집·성급 후속 논의](docs/MACHINE-COLLECTION-NOTES-v0.1.md)
 - [Mk.III 구현 범위](pachinko-prototype/mark3/README.md)
