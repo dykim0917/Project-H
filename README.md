@@ -24,6 +24,7 @@ python3 -m http.server 8765 --bind 127.0.0.1 --directory pachinko-prototype
 
 ## 기획과 구현 기록
 
+- [세계관·아트 방향 초안 v0.1](docs/PROJECT-H-WORLDBUILDING-v0.1.md)
 - [최신 GDD v0.7 초안](docs/PROJECT-H-GDD-v0.7.md)
 - [이전 GDD v0.6 초안](docs/PROJECT-H-GDD-v0.6.md)
 - [이전 GDD v0.5 초안](docs/PROJECT-H-GDD-v0.5.md)
